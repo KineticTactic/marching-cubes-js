@@ -10,12 +10,25 @@
             }
             canvas {
                 display: block;
+                z-index: 1;
+            }
+            .text {
+                position: absolute;
+            }
+            h2 {
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
             }
         </style>
 
         <title>Marching Cubes</title>
     </head>
     <body>
+        <div class="text">
+            <h2>Click and drag to orbit</h2>
+            <h2>Scroll to zoom</h2>
+            <h2>Right Click drag to pan</h2>
+        </div>
         <script src="https://unpkg.com/three@0.118.3/build/three.js"></script>
         <script src="lib/OrbitControls.js"></script>
         <script src="lib/OpenSimplexNoise.js"></script>
